@@ -1,0 +1,31 @@
+﻿<Window x:Class="TestTask.AboutProgramm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        mc:Ignorable="d"
+        Title="О программе" Height="196.527" Width="381"
+        Icon="Icons/MainWindow.ico"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="0,0,-8,-31">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="155*"/>
+            <RowDefinition Height="64*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="CloseButton" Content="Закрыть" HorizontalAlignment="Left" Margin="125,0,0,0" VerticalAlignment="Top" Width="109" Grid.Row="1" Height="24" Click="Close_Click" Grid.Column="1"/>
+        <GroupBox x:Name="groupBox" Header="Информация" HorizontalAlignment="Left" Margin="0,10,0,0" Foreground="Blue" VerticalAlignment="Top" Height="114" Width="234" Grid.Column="1">
+            <StackPanel Orientation="Vertical" Margin="0,0,-12,0">
+                <Label x:Name="TextBlock1" Content="Название программы: TestTask" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="TextBlock2" Content="Версия: 1.0 (07.2016)" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Label x:Name="TextBlock3" Content="Разработчик: Швецов Е.В." HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </StackPanel>
+        </GroupBox>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="124" VerticalAlignment="Top" Width="120" Source="Icons/AboutProgramm.png" Margin="10,0,0,0"/>
+
+    </Grid>
+</Window>

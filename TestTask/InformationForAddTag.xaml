@@ -1,0 +1,27 @@
+﻿<Window x:Class="TestTask.InformationForTagAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        mc:Ignorable="d"
+        Title="Добавление тега" Height="250" Width="280"
+        Icon="Icons/MainWindow.ico"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="0,0,-8,-31">
+        <TextBox x:Name="tagName" HorizontalAlignment="Center" Height="23" Margin="10,29,10,0" TextWrapping="Wrap" ToolTip="Новое имя тега" VerticalAlignment="Top" Width="174"/>
+        <TextBox x:Name="tagValue" HorizontalAlignment="Center" Height="23" Margin="10,126,8,0" TextWrapping="Wrap" ToolTip="Значение тега" VerticalAlignment="Top" Width="176"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Center" Margin="10,78,8,0" VerticalAlignment="Top" Width="176" FontWeight="Medium" SelectionChanged="CheckSelectedInformation">
+            <TextBlock> Double </TextBlock>
+            <TextBlock> Int </TextBlock>
+            <TextBlock> Bool </TextBlock>
+            <TextBlock> None </TextBlock>
+        </ComboBox>
+        <Label x:Name="TagName" Content="Имя добавляемого тега:" HorizontalAlignment="Center" Margin="0,3,6,0" VerticalAlignment="Top" Width="175" FontWeight="Medium"/>
+        <Button x:Name="AddTagButton" Content="Добавить тег" HorizontalAlignment="Center" Margin="10,163,8,0" VerticalAlignment="Top" Width="176" Height="28" Click="AddTagButton_Click"/>
+        <Label x:Name="TagType" Content="Тип добавляемого тега:" HorizontalAlignment="Center" Margin="0,52,8,0" VerticalAlignment="Top" Width="176" FontWeight="Medium"/>
+        <Label x:Name="TagValue" Content="Значение добавляемого тега:" HorizontalAlignment="Center" Margin="0,100,4,0" VerticalAlignment="Top" Width="180" FontWeight="Medium"/>
+
+    </Grid>
+</Window>

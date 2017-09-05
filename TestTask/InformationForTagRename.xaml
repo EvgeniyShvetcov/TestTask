@@ -1,0 +1,17 @@
+﻿<Window x:Class="TestTask.InformationForTagRename"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        mc:Ignorable="d"
+        Title="Переименование тега" Height="175.333" Width="321.333"
+        ResizeMode="CanMinimize"
+        Icon="Icons/MainWindow.ico"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="0,0,-6,-31">
+        <Label x:Name="label" Content="Новое имя тега" HorizontalAlignment="Center" Margin="45,20,56,0" VerticalAlignment="Top" FontWeight="Medium" Width="189"/>
+        <TextBox x:Name="newTagName" HorizontalAlignment="Center" Height="23" Margin="60,55,61,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Button x:Name="RenameTag" Content="Переименовать тег" HorizontalAlignment="Center" Margin="61,101,61,0" VerticalAlignment="Top" Click="RenameTag_Click" Width="189" Height="23"/>
+    </Grid>
+</Window>

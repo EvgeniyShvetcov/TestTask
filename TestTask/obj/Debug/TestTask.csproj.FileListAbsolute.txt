@@ -1,0 +1,36 @@
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\bin\Debug\TestTask.exe.config
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\bin\Debug\TestTask.exe
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\bin\Debug\TestTask.pdb
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask.csprojResolveAssemblyReference.cache
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\MainWindow.g.cs
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\App.g.cs
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask_MarkupCompile.cache
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask_MarkupCompile.lref
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\MainWindow.baml
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask.g.resources
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask.Properties.Resources.resources
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask.csproj.GenerateResource.Cache
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask.exe
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\TestTask.pdb
+C:\Users\Jane\Desktop\Visual Studio\TestTask\TestTask\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\bin\Debug\TestTask.exe.config
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask.exe
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask.pdb
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\bin\Debug\TestTask.exe
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\bin\Debug\TestTask.pdb
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask.csprojResolveAssemblyReference.cache
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\MainWindow.g.cs
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\App.g.cs
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask_MarkupCompile.cache
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask_MarkupCompile.lref
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\MainWindow.baml
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask.g.resources
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask.Properties.Resources.resources
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\TestTask.csproj.GenerateResource.Cache
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\InformationForAddTag.g.cs
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\InformationForTagRename.g.cs
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\InformationForAddTag.baml
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\InformationForTagRename.baml
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\AboutProgramm.g.cs
+C:\Users\Jane\Desktop\Тестовое задание №2\TestTask\obj\Debug\AboutProgramm.baml

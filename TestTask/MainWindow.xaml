@@ -1,0 +1,124 @@
+﻿<Window x:Class="TestTask.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        xmlns:my="clr-namespace:System.ComponentModel;assembly=System"
+        xmlns:path="clr-namespace:System.IO;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Дерево тегов" Height="415" Width="381"
+        Icon="Icons/MainWindow.ico"
+        ResizeMode="CanMinimize" Closing="OnClosing"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <my:BackgroundWorker
+          x:Key="backgroundWoker"
+          WorkerReportsProgress="True"
+          WorkerSupportsCancellation="True"
+          DoWork="backgroundWorker_DoWork"
+          RunWorkerCompleted="backgroundWorker_RunWorkerCompleted">
+        </my:BackgroundWorker>
+
+        <local:TagStorage x:Key="tagStorage"/>
+
+        <DataTemplate x:Key="level4">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Path = Value.Tagiconpath}"/>
+                <TextBlock Text="{Binding Path = Value.Alltaginformation}"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <HierarchicalDataTemplate x:Key="level3"
+                                  ItemsSource = "{Binding Path = Value.childList}"
+                                  ItemTemplate = "{StaticResource level4}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Path = Value.Tagiconpath}"/>
+                <TextBlock Text="{Binding Path = Value.Alltaginformation}"/>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate x:Key="level2"
+                                  ItemsSource = "{Binding Path = Value.childList}"
+                                  ItemTemplate = "{StaticResource level3}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Path = Value.Tagiconpath}"/>
+                <TextBlock Text="{Binding Path = Value.Alltaginformation}"/>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+
+        <HierarchicalDataTemplate x:Key = "level1"
+                                  ItemsSource = "{Binding Path = Value.childList }"
+                                  ItemTemplate = "{StaticResource level2}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding Path = Value.Tagiconpath}"/>
+                <TextBlock Text="{Binding Path = Value.Alltaginformation}"/>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+
+    </Window.Resources>
+    <Grid HorizontalAlignment="Center" Margin="10,0,4,0" Width="361">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"></RowDefinition>
+            <RowDefinition Height="325*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" Height="25" VerticalAlignment="Bottom" Margin="10,0" Background="Honeydew">
+            <MenuItem Header="Меню" VerticalAlignment="Center" Margin="0,3">
+                <MenuItem Header="Загрузить дерево тегов" Click="button_Click_1">
+                    <MenuItem.Icon>
+                        <Image Source="Icons/Load.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Выгрузить дерево тегов" Click="SaveToXML">
+                    <MenuItem.Icon>
+                        <Image Source="Icons/Save.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="Выход" Click="ExitClick">
+                    <MenuItem.Icon>
+                        <Image Source="Icons/Exit.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Справка">
+                <MenuItem Header="Посмотреть справку">
+                    <MenuItem.Icon>
+                        <Image Source="Icons/Help.png"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="О программе" Click="AboutProgramm_Click">
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TreeView x:Name="treeView" Grid.Row="1" HorizontalAlignment="Center" Height="339" 
+                  VerticalAlignment="Top" Width="341" 
+                  ToolTip="Для отмены выделения нажать левую кнопку мыши на пустом месте!" 
+                  MouseLeftButtonDown = "CancelSelectedTag" Margin="10,0"
+                  ItemTemplate = "{StaticResource level1}"
+                  ItemsSource = "{Binding }">
+
+            <TreeView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Добавить тег" Click="addTag_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Icons/Add.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Удалить тег" Click="deleteTag_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Icons/Delete.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Переименовать тег" Click="renameTag_Click">
+                        <MenuItem.Icon>
+                            <Image Source="Icons/Rename.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </TreeView.ContextMenu>
+        </TreeView>
+    </Grid>
+</Window>
